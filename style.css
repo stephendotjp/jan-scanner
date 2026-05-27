@@ -34,7 +34,7 @@ html, body {
   padding: 0 14px;
   height: 44px;
   background: #fff;
-  border-bottom: 2px solid #2fb5d2;
+  border-bottom: 2px solid #e35141;
   flex-shrink: 0;
 }
 
@@ -43,7 +43,7 @@ html, body {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.05em;
-  color: #2fb5d2;
+  color: #e35141;
   text-transform: uppercase;
 }
 
@@ -79,11 +79,11 @@ html, body {
   transform: translate(-50%, -55%);
   width: min(74vw, 320px);
   height: min(42vw, 175px);
-  border: 2px solid #2fb5d2;
+  border: 2px solid #e35141;
   border-radius: 4px;
   box-shadow:
     0 0 0 9999px rgba(0, 0, 0, 0.52),
-    0 0 0 2px rgba(47, 181, 210, 0.25);
+    0 0 0 2px rgba(227, 81, 65, 0.25);
   pointer-events: none;
   z-index: 10;
 }
@@ -136,13 +136,13 @@ html, body {
 }
 
 #manual-input:focus {
-  border-color: #2fb5d2;
-  box-shadow: 0 0 0 2px rgba(47, 181, 210, 0.2);
+  border-color: #e35141;
+  box-shadow: 0 0 0 2px rgba(227, 81, 65, 0.2);
 }
 
 #search-btn {
   padding: 9px 18px;
-  background: #2fb5d2;
+  background: #e35141;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -155,9 +155,9 @@ html, body {
 }
 
 #search-btn:hover {
-  background: #2592a9;
+  background: #cb4839;
 }
 
 #search-btn:active {
-  background: #1e788c;
+  background: #b33f32;
 }
