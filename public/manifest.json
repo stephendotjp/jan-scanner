@@ -4,8 +4,8 @@
   "description": "Scan JAN/EAN barcodes and search Hobby Genki",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#1a1a2e",
+  "background_color": "#ffffff",
+  "theme_color": "#2fb5d2",
   "orientation": "portrait",
   "icons": [
     {
