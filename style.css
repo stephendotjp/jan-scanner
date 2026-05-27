@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#scanner-container {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: #111;
+}
+
+#scanner {
+  position: absolute;
+  inset: 0;
+}
+
+#scanner video,
+#scanner canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+#crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: min(72vw, 310px);
+  height: min(40vw, 170px);
+  border: 2px solid rgba(255, 200, 0, 0.9);
+  border-radius: 6px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.48);
+  pointer-events: none;
+  z-index: 10;
+}
+
+#status {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.68);
+  color: #e0e0e0;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+#manual-section {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  background: #1a1a2e;
+  border-top: 1px solid #2a2a40;
+}
+
+#manual-input {
+  flex: 1;
+  padding: 11px 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #0f0f1e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+#manual-input::placeholder {
+  color: #555;
+}
+
+#manual-input:focus {
+  border-color: #ffc800;
+}
+
+#search-btn {
+  padding: 11px 18px;
+  background: #ffc800;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.1s;
+}
+
+#search-btn:active {
+  opacity: 0.8;
+}
